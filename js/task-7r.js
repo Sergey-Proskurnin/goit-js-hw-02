@@ -40,11 +40,20 @@
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function (login) {
-  if (login.length < 4 || login.length > 16) {
-    return false;
-  }
-  return true; // твой код
-};
+  let result = login.length >= 4 && login.length <= 16 
+    
+    return result
+  
+  
+  // твой кодfalse;true;
+}
+
+// const isLoginValid = function (login) {
+//   if (login.length < 4 || login.length > 16) {
+//     return false;
+//   }
+//   return true; // твой код
+// };
 
 const isLoginUnique = function (allLogins, login) {
   if (allLogins.includes(login)) {
